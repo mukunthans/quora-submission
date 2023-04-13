@@ -1,0 +1,15 @@
+.home{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-basis:75%;
+}
+.home-content{
+    display:flex;
+    height: 100%;
+    flex-grow:1;
+    
+}
+
+
+

@@ -1,0 +1,33 @@
+.addAnswer{
+    padding:25px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction:column;
+    gap:10px;
+}
+
+.addAnswer-form{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.addAnswer-form > input {
+    padding:10px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.addAnswer-form > button{
+    width: 70px;
+    height: 40px;
+    background-color: rgba(11, 186, 11, 0.895);
+    font-weight: bold;
+    text-shadow: 1px 1px 10px;
+    border-radius: 10px;
+
+}
+

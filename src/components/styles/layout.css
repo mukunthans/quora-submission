@@ -1,0 +1,23 @@
+.main{
+  display:flex;
+  flex-direction: column;
+      background: whitesmoke;
+  
+}
+.main-area{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: flex-start;
+
+
+    
+}
+.outlet{
+
+    border-right:2px double gray;
+    border-bottom: 2px double gray;
+    flex-grow: 1;
+}
+
+

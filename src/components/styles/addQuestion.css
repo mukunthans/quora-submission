@@ -1,0 +1,30 @@
+.AddQuestion{
+    padding:10px;
+    display:flex;
+    min-height: 500px;
+    flex-direction: column;
+    gap:20px;
+    flex-grow:1;
+}
+
+.addQuestionForm
+{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.addQuestionForm > button{
+    width: 70px;
+    height: 40px;
+    background-color: rgba(11, 186, 11, 0.895);
+    font-weight: bold;
+    text-shadow: 1px 1px 10px;
+    border-radius: 10px;
+
+}
+
+.addQuestionForm > input {
+    padding: 20px;
+    border-radius: 10px;
+}

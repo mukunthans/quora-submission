@@ -1,0 +1,79 @@
+.feed{
+    display:flex;
+    flex-direction: column;
+    flex-grow:1;
+}
+
+.feed-single{
+    border-bottom: 2px solid black;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px -2px;
+    background: rgba(128, 128, 128, 0.105);
+
+}
+.feed-single:hover{
+    background: white;
+}
+
+.feed-single-row1{
+    display:flex;
+    justify-content: flex-start;
+    border-bottom: 1px dotted gray;
+}
+.feed-profile-pic > img{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+}
+.feed-question{
+    flex-grow: 1;
+    margin-left:15px;
+    margin-top:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+
+}
+.feed-single-row2{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted gray;
+    font-size: 0.8em;
+}
+.no-answers-text{
+    text-align: center;
+}
+
+.answer{
+    border:1px dotted gray;
+}
+.answerDetails{
+    border-bottom: 1px solid black;
+    display:flex;
+    justify-content:space-between;
+    font-size: 0.8em;
+
+}
+.feed-add-answer-btns{
+    margin-top: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.feed-add-answer-btn{
+    background: gray;
+    text-decoration: none;
+    padding:5px;
+    border-radius: 5px;
+    color: white;
+    cursor:pointer;
+    width: fit-content;
+}
+
+.feed-add-answer-btn:hover{
+    background: rgba(184, 147, 147, 0.315);
+
+    color: black;
+}
