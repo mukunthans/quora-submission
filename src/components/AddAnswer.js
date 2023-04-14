@@ -46,22 +46,28 @@ const AddAnswer = () => {
 
 
   return (
-    <div className="addAnswer">
-      <h3>{question.question}</h3>
-      <form className="addAnswer-form" onSubmit={(e) => e.preventDefault()}>
-        <input
-          id="answer"
-          type="text"
-          value={answer}
-          required
-          onChange={(e) => setAnswer(e.target.value)}
-          placeholder="Type your answer here"
-        />
-        <button type="submit" onClick={() => handleSubmit()}>
-          Submit
-        </button>
-      </form>
-    </div>
+    <>
+      {question ? (
+        <div className="addAnswer">
+          <h3>{question.question}</h3>
+          <form className="addAnswer-form" onSubmit={(e) => e.preventDefault()}>
+            <input
+              id="answer"
+              type="text"
+              value={answer}
+              required
+              onChange={(e) => setAnswer(e.target.value)}
+              placeholder="Type your answer here"
+            />
+            <button type="submit" onClick={() => handleSubmit()}>
+              Submit
+            </button>
+          </form>
+        </div>
+      ) : (
+        <p>Please Reload</p>
+      )}
+    </>
   );
 };
 
