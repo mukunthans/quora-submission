@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/quora-submission/static/css/main.b05dbbd1.css",
-    "main.js": "/quora-submission/static/js/main.ddd93344.js",
+    "main.js": "/quora-submission/static/js/main.bfd991f1.js",
     "static/media/pngfind.com-quora-logo-png-4204357.png": "/quora-submission/static/media/pngfind.com-quora-logo-png-4204357.b5eb06efa4d5d9082bd1.png",
     "index.html": "/quora-submission/index.html",
     "main.b05dbbd1.css.map": "/quora-submission/static/css/main.b05dbbd1.css.map",
-    "main.ddd93344.js.map": "/quora-submission/static/js/main.ddd93344.js.map"
+    "main.bfd991f1.js.map": "/quora-submission/static/js/main.bfd991f1.js.map"
   },
   "entrypoints": [
     "static/css/main.b05dbbd1.css",
-    "static/js/main.ddd93344.js"
+    "static/js/main.bfd991f1.js"
   ]
 }
