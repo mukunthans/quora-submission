@@ -39,7 +39,7 @@ const AddAnswer = () => {
 
       setAnswer('');
       navigate('/');
-      alert("Question added");
+      alert("Answer added");
 
    
   }

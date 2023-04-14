@@ -5,14 +5,16 @@ import {
   signOut,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import './styles/LoginPage.css'
+import DataContext from "../context/DataContext";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const {setIsOpen} = useContext(DataContext)
 
   const signIn = async () => {
     try {
@@ -45,7 +47,7 @@ const LoginPage = () => {
   const login = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-    
+      setIsOpen(false);
       navigate("/", { replace: true });
     } catch (error) {
       alert(error.message);
