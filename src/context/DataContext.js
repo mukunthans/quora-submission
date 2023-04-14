@@ -1,15 +1,21 @@
 import { createContext, useState, useEffect } from "react";
-import useAxiosFetch from "../hooks/useAxiosFetch";
+import { questions } from "../data";
+import { quesAndAns } from "../constants";
+
+
 const DataContext = createContext({});
+
+
 
 export const DataProvider = ({ children }) => {
   const [search, setSearch] = useState("");
   const [qAa, setqAa] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
     const [searchResults, setSearchResults] = useState([]);
-  const { data, fetchError, isLoading } = useAxiosFetch(
+/*   const { data, fetchError, isLoading } = useAxiosFetch(
     "http://localhost:3500/questions"
-  );
+  ); */
+  const [data, setData] = useState(quesAndAns || questions);
 
   useEffect(() => {
     console.log(data);

@@ -1,8 +1,8 @@
-import React, { useEffect, useContext } from "react";
+import React, {  useContext } from "react";
 import './styles/feed.css'
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
-import { fetchQAndAData } from "../features/questionAndAnswer/questionAndAnswerSlice";
+
 import DataContext from "../context/DataContext";
 import Modal from "./Modal";
 

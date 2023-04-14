@@ -1,8 +1,7 @@
-import { useEffect,useState,useContext } from "react";
+import { useState,useContext } from "react";
 import { useParams ,useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import { useSelector  } from "react-redux";
-import api from '../api/question&ans'
 import './styles/addAnswer.css'
 import DataContext from "../context/DataContext";
 
@@ -18,7 +17,7 @@ const AddAnswer = () => {
    const [answer,setAnswer] = useState("");
 
 
-   const handleSubmit = async ( ) => {
+   const handleSubmit =  ( ) => {
     console.log(question);
 
         const datetime = format(new Date(), "MMMM dd yyyy pp");
@@ -30,22 +29,18 @@ const AddAnswer = () => {
       const ans = { answerId : `${id}.${answerId}`, answer, answerdBy: user.email ,datetime};
       updatedQuestion.answers.push(ans);
 
-          try{
-      const response = await api.put(`/questions/${id}`, updatedQuestion);
       const updatedqAa = qAa.map((qAa) =>
         qAa.id.toString() === id ? updatedQuestion : qAa
       ); 
       console.log(updatedqAa);
       setqAa(updatedqAa);
-      console.log('response');
-      console.log({ ...response.data });
+      localStorage.setItem("questions", JSON.stringify(updatedqAa));
+
 
       setAnswer('');
       navigate('/');
-    }catch(err)
-    {
-      console.log(`Error: ${err.message}`);
-    }
+      alert("Question added");
+
    
   }
 

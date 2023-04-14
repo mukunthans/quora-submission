@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+
 import './styles/questionList.css';
 import { useContext } from "react";
 import DataContext from "../context/DataContext";

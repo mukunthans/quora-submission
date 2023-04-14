@@ -1,7 +1,6 @@
 import React,{useContext} from 'react'
 import { Outlet ,Link} from 'react-router-dom'
 import './styles/answerQuestions.css'
-import { useSelector } from 'react-redux'
 import DataContext from '../context/DataContext'
 
 
