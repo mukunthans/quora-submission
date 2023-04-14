@@ -2,7 +2,6 @@ import { auth, googleProvider } from "../firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithPopup,
-  signOut,
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { useState,useContext } from "react";
@@ -19,7 +18,7 @@ const LoginPage = () => {
   const signIn = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-
+      setIsOpen(false);
       navigate("/",{replace:true});
       //
     } catch (error) {
@@ -29,7 +28,9 @@ const LoginPage = () => {
   const signInWithGoogle = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
+      setIsOpen(false);
       navigate("/", { replace: true });
+
     } catch (error) {
       alert(error.message);
     }
