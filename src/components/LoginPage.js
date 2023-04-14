@@ -34,15 +34,7 @@ const LoginPage = () => {
       alert(error.message);
     }
   };
-  const logout = async () => {
-    try {
-      await signOut(auth);
 
-      navigate("/");
-    } catch (error) {
-      alert(error.message);
-    }
-  };
 
   const login = async () => {
     try {
