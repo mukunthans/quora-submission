@@ -2,6 +2,8 @@
     display:flex;
     flex-direction: column;
     flex-grow:1;
+    padding:20px;
+    background-color: rgba(110, 8, 8, 0.926);
 }
 
 .feed-single{
@@ -10,7 +12,9 @@
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 5px -2px;
-    background: rgba(128, 128, 128, 0.105);
+    background: rgb(209, 207, 207);
+    margin:10px 0;
+    border-radius: 20px;
 
 }
 .feed-single:hover{
@@ -46,11 +50,22 @@
     text-align: center;
 }
 
+.answers{
+    padding:10px;
+    margin:15px;
+    background-color: rgba(216, 74, 42, 0.497);
+    border-radius: 10px;
+}
+
 .answer{
     border:1px dotted gray;
+    margin:5px 0;
+    padding:5px;
+    border-radius: 10px;
+    background-color: rgb(209, 207, 207);
 }
 .answerDetails{
-    border-bottom: 1px solid black;
+
     display:flex;
     justify-content:space-between;
     font-size: 0.8em;
@@ -58,22 +73,32 @@
 }
 .feed-add-answer-btns{
     margin-top: 10px;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    
 }
 
-.feed-add-answer-btn{
-    background: gray;
+.feed-add-answer-btn , .feed-show-answer-btn ,.feed-hide-answer-btn{
+
+    background: rgba(184, 147, 147, 0.315);
     text-decoration: none;
     padding:5px;
     border-radius: 5px;
-    color: white;
+    color: black;
+    font-weight: bolder;
     cursor:pointer;
     width: fit-content;
 }
 
-.feed-add-answer-btn:hover{
-    background: rgba(184, 147, 147, 0.315);
+.feed-add-answer-btn:hover  {
+    background: rgb(20, 221, 20);
 
     color: black;
+}
+.feed-show-answer-btn:hover ,.feed-hide-answer-btn:hover{
+    background-color: white;
+
 }

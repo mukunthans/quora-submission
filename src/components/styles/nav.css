@@ -5,13 +5,15 @@
 nav{
 
     display: flex;
-    height:10vh;
+    height:75px;
     justify-content: space-between;
-    background: whitesmoke;
+    background-color: white;
     gap:5px;
     padding: 5px;
     border-bottom: 2px solid gray;
     max-width: 100vw;
+
+    
 
 
 
@@ -25,7 +27,11 @@ nav{
     height: 100%;
     position: sticky;
     top:0;
-       
+    z-index: 2;
+
+
+      
+ 
 
 }
 
