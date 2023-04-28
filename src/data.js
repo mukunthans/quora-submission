@@ -300,4 +300,25 @@ export const questions = [
       "https://lh3.googleusercontent.com/a/AGNmyxYoU2wc0T5l5EGHCME_wZCcKqzbn4T_cV-53KU-qQ=s96-c",
     answers: [],
   },
+  {
+    answers: [] ,
+askedBy
+: 
+"smukunthan134@gmail.com",
+datetime
+: 
+"April 28 2023 2:31:58 PM",
+id
+: 
+19,
+profilePic
+: 
+"https://lh3.googleusercontent.com/a/AGNmyxYoU2wc0T5l5EGHCME_wZCcKqzbn4T_cV-53KU-qQ=s96-c",
+question
+: 
+"what is DOM ?",
+questionUrl
+: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20210908120846/DOM.png",
+  }
 ];

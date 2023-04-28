@@ -31,21 +31,26 @@
     width:100%; 
     background-color: white;
     border-radius: 5px;
-
-
-
-
-
-
+    cursor: pointer;
 }
+.question-links:hover {
+   border-left:10px solid red;
+   padding-left: 10px;
+   transform: scale(1.05);
+}
+
+
+
 .question-links a{
    text-decoration: none;
    font-weight: bold;
-
+   
    margin:5px;
    padding:5px;
    line-height: 200%;
    color:black;
    font-family: cursive;
+   width: 100%;
+   
 
 }
