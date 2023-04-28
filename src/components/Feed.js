@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import DataContext from "../context/DataContext";
 import Modal from "./Modal";
 import SingleFeed from "./SingleFeed";
-
+import Sidebar from "./Sidebar";
 
 
 const Feed = () => {
@@ -40,6 +40,8 @@ const Feed = () => {
 
 
   return (
+    <>
+    <Sidebar/>
     <div className="feed">
       {searchResults ? (
         <>
@@ -54,6 +56,7 @@ const Feed = () => {
       )}
       
     </div>
+    </>
   );
 }
 

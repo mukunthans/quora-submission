@@ -1,6 +1,7 @@
 .main{
   display:flex;
   flex-direction: column;
+  background-color: whitesmoke;
  
   
 }
@@ -14,10 +15,8 @@
     
 }
 .outlet{
+  flex-basis: 80%;
 
-    border-right:2px double gray;
-    border-bottom: 2px double gray;
-    flex-grow: 1;
 }
 
 

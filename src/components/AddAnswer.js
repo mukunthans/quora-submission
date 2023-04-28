@@ -50,6 +50,15 @@ const AddAnswer = () => {
       {question ? (
         <div className="addAnswer">
           <h3>{question.question}</h3>
+          <div className="feed-single-row2">
+          <p>Asked By : {question.askedBy}</p>
+          <p>{question.datetime}</p>
+        </div>
+        <div className="question-img">
+          {
+          question.questionUrl && <img className="question-img-url" src={question.questionUrl} ></img>
+}
+        </div>
           <form className="addAnswer-form" onSubmit={(e) => e.preventDefault()}>
             <input
               id="answer"

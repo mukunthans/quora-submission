@@ -44,6 +44,11 @@ const SingleFeed = ({data}) => {
           <p>Asked By : {data.askedBy}</p>
           <p>{data.datetime}</p>
         </div>
+        <div className="question-img">
+          {
+          data.questionUrl && <img className="question-img-url" src={data.questionUrl} ></img>
+}
+        </div>
 
       { showAnswer &&  <div className="answers">
           <h3>Answers:</h3>
@@ -73,7 +78,7 @@ const SingleFeed = ({data}) => {
             onClick={() => setShowAnswer(true)}
           >Show Answer</button>}
           {
-            showAnswer && <button className="feed-hide-answer-btn" onClick={() => setShowAnswer(false)}>Hide Answer</button>
+            showAnswer && <button className="feed-hide-answer-btn" onClick={() => setShowAnswer(false)}>^</button>
           }
             
           

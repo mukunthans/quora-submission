@@ -1,9 +1,14 @@
 .addAnswer{
     padding:25px;
     display: flex;
-    flex-grow: 1;
+    width:70%;
     flex-direction:column;
     gap:10px;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: red;
+
+
 }
 
 .addAnswer-form{
@@ -12,6 +17,7 @@
     gap:5px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .addAnswer-form > input {
@@ -31,3 +37,8 @@
 
 }
 
+
+.choose-answer{
+    display:flex;
+    padding-top:250px;
+}

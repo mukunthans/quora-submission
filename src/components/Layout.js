@@ -13,7 +13,7 @@ const Layout = () => {
       </div>
       
       <div className="main-area">
-      <Sidebar/>
+     
         <div className="outlet">
           <Outlet />
         </div>

@@ -105,22 +105,6 @@ export const questions = [
     ],
   },
   {
-    id: 5,
-    question: "what the fuck ?",
-    datetime: "April 13 2023 3:26:25 PM",
-    askedBy: "qwerty@abc.com",
-    profilePic:
-      "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
-    answers: [
-      {
-        answerId: "5.1",
-        answer: "None",
-        answerdBy: "smukunthan134@gmail.com",
-        datetime: "April 13 2023 3:49:57 PM",
-      },
-    ],
-  },
-  {
     id: 6,
     question: "Who are u ?",
     datetime: "April 13 2023 3:49:51 PM",

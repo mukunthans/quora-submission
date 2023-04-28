@@ -12,7 +12,7 @@ const AnswerQuestions = () => {
   return (
     <div className="answerQuestions">
       <div className="quesList">
-        <h3 style={{ padding: "5px" }}>Select from here</h3>
+        <h2 style={{ padding: "5px" }}>Select from here</h2>
         {searchResults.length ? (
           searchResults.map((item) => {
             return (
